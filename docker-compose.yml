@@ -1,0 +1,8 @@
+php:
+    build:
+        context: ./vendor/laravel/sail/runtimes/8.2
+        dockerfile: Dockerfile
+        args:
+            WWWGROUP: '${WWWGROUP}'
+    environment:
+        PHP_MAX_EXECUTION_TIME: 300 

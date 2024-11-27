@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    transition: background-color 0.5s ease;
+}
+
+/* Tema gelap */
+.dark {
+    background-color: #1a202c;
+    color: #cbd5e0;
+}
+
+/* Aturan lain untuk elemen spesifik dalam tema gelap */
+.dark .bg-white {
+    background-color: #2d3748;
+}
+
+.dark .text-gray-800 {
+    color: #e2e8f0;
+}
+
+/* Z-index layout */
+.layout-navigation { z-index: 50; }
+.layout-header { z-index: 40; }
+.layout-main { z-index: 30; }
+.layout-content { z-index: 20; }
+.layout-footer { z-index: 10; }
+
+/* Dropdown menus */
+.dropdown-content { z-index: 100; }
+
+/* Modal/dialog */
+.modal-container { z-index: 200; }
+
+/* Toast/notifications */
+.notification-container { z-index: 150; }
+
+/* Card stacking */
+.card {
+    position: relative;
+    z-index: 1;
+}
+
+/* Fix untuk gradient overlays */
+.gradient-overlay {
+    position: relative;
+    z-index: 0;
+}
+
+/* Fix untuk sticky elements */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 45;
+    background-clip: padding-box;
+}
+
+/* Fix untuk floating elements */
+.float-element {
+    position: relative;
+    z-index: 5;
+}
